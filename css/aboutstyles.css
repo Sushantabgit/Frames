@@ -1,4 +1,4 @@
-/*Id's*/
+/*Ids*/
 #heading{
     color: white;
     padding-top:100px;
@@ -10,32 +10,31 @@
     background-size: cover;
     font-family: "Montserrat";
 }
-
-/*Classes*/
+/*classe*/
 .navbar{
     padding: 10px;
 }
 
-.preview-sec{
+.row{
+    padding-top: 50px;
     margin: auto;
-    width: 98%;
-}
-
-.img-hold{
-    padding: 10px;
-}
-
-.preview-img{
     width: 100%;
 }
+.pic{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
 
-/*Tags*/
-
+/*tags*/
 body{
     text-align: center;
-    margin: auto;
 }
 
 body::-webkit-scrollbar{
     display: none;
+}
+
+h1{
+    font-size: 10vh;
 }
