@@ -1,9 +1,14 @@
 /*Id's*/
 #heading{
+    color: white;
     padding-top:100px;
     padding-bottom: 100px ;
     padding-right:10px;
     padding-left: 10px;
+    background-image: url("pexels-scott-webb-593158.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
 }
 
 /*Classes*/
@@ -11,6 +16,21 @@
     padding-right: 10px;
     padding: 10px;
 }
+
+.preview-sec{
+    margin: auto;
+    width: 98%;
+}
+
+.img-hold{
+    padding: 10px;
+}
+
+.preview-img{
+    width: 100%;
+}
+
+
 
 /*Tags*/
 body{
