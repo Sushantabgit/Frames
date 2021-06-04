@@ -66,42 +66,57 @@
 
     <div class="row preview-sec">
         <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
+            <a href="">
+                <div class="img-thumbnail preview-img">
+                </div>
+                <p>Title</p>
+            </a>
+
         </div>
+
         <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
+            <a href="">
+                <div class="img-thumbnail preview-img">
+                </div>
+                <p>Title</p>
+            </a>
+
         </div>
+
         <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
+            <a href="">
+                <div class="img-thumbnail preview-img">
+                </div>
+                <p>Title</p>
+            </a>
+
         </div>
+
         <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
+            <a href="">
+                <div class="img-thumbnail preview-img">
+                </div>
+                <p>Title</p>
+            </a>
+
         </div>
-        <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
-        </div>
-        <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
-        </div>
-        <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
-        </div>
-        <div class="col-lg-3 col-md-6 img-hold">
-            <img src="test-img/test-img.jpg" class="img-thumbnail preview-img" alt="">
-        </div>
+
     </div>
 
     <!--Upload-->
 
     <div class="upload">
-        <form action="">
-            <input class="from-control form-control-lg" type="text" name="title" placeholder="Title">
-            <input class="from-control form-control-lg" type="text" name="name" placeholder="Your Name">
-             <input class="form-control" type="file" name="upload">
+        <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="filename" placeholder="filename">
+
+            <input type="text" name="title" placeholder="imgtitle">
+
+            <input type="file" name="file">
+            <button type="submit" name="submit">upload</button>
+
         </form>
+
     </div>
-
-
 
     <!--Javacript-->
     <script src="css/script.js"></script>
