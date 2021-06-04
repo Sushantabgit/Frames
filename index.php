@@ -73,9 +73,9 @@ $_SESSION['username'] = "Admin";
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="col-lg-3 col-md-6 img-hold">
             <a href="">
-                <div class="img-thumbnail" style="background-image: url(images/'.$row["imgFullNameGallery"].');">
+                <div class="img-thumbnail preview-img" style="background-image: url(images/'.$row["imgFullNameGallery"].');  background-repeat: round; background-size: contain;">
                 </div>
-                <p>'.$row["titleGallery"].'</p>
+                <h3>'.$row["titleGallery"].'</h3>
             </a>
 
         </div>';
