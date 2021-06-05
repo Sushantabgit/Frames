@@ -25,6 +25,15 @@
     height: 150px;
     width: 150px;
 }
+.title{
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+.para{
+
+    text-align: justify;
+}
 
 /*tags*/
 body{
@@ -37,4 +46,9 @@ body::-webkit-scrollbar{
 
 h1{
     font-size: 10vh;
+}
+
+ul{
+
+    list-style: none;
 }
