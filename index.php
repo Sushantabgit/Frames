@@ -69,6 +69,26 @@ $_SESSION['username'] = "Admin";
     <div id="heading">
         <h1>The best place to show your Photographic skills.</h1>
     </div>
+    <!--Upload-->
+
+    <?php
+
+    if (isset($_SESSION['username'])) {
+        echo '<div class="upload">
+    <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data">
+        <input class="form-control" type="text" name="filename" placeholder="File Name" required>
+
+        <input class="form-control" type="text" name="title" placeholder="Title" required>
+
+        <input class="form-control" type="file" name="file" required><br>
+        <button class="btn btn-success" type="submit" name="submit">Upload</button>
+
+    </form>
+
+</div>';
+    }
+
+    ?>
     <!--content-->
 
     <div class="row preview-sec">
@@ -97,26 +117,6 @@ $_SESSION['username'] = "Admin";
         ?>
     </div>
 
-    <!--Upload-->
-
-    <?php
-
-    if (isset($_SESSION['username'])) {
-        echo '<div class="upload">
-        <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data">
-            <input class="form-control" type="text" name="filename" placeholder="File Name" required>
-
-            <input class="form-control" type="text" name="title" placeholder="Title" required>
-
-            <input class="form-control" type="file" name="file" required><br>
-            <button class="btn btn-success" type="submit" name="submit">Upload</button>
-
-        </form>
-
-    </div>';
-    }
-
-    ?>
 
     <!--Footer-->
 
