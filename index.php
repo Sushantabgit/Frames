@@ -2,7 +2,6 @@
 $_SESSION['username'] = "Admin";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,9 +44,22 @@ $_SESSION['username'] = "Admin";
                 <li class="nav-item">
                     <a class="nav-link" href="about.htm">About</a>
                 </li>
-                <li class="nav-item">
-                    <button id="upload" class="btn btn-outline-dark">Login</button>
+                <li>
+                    <a class="nav-link" href="about.htm">Contact</a>
                 </li>
+
+
+                <?php
+                if (isset($_SESSION['username'])) {
+                    echo '<li class="nav-item">
+                <button class="btn btn-outline-dark">Sign Out</button>
+            </li>';
+                } else {
+                    echo '<li class="nav-item">
+                    <button class="btn btn-outline-dark">Login</button>
+                </li>';
+                }
+                ?>
             </ul>
         </div>
     </nav>
@@ -73,9 +85,9 @@ $_SESSION['username'] = "Admin";
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="col-lg-3 col-md-6 img-hold">
             <a href="">
-                <div class="img-thumbnail preview-img" style="background-image: url(images/'.$row["imgFullNameGallery"].');  background-repeat: round; background-size: contain;">
+                <div class="img-thumbnail preview-img" style="background-image: url(images/' . $row["imgFullNameGallery"] . ');  background-repeat: round; background-size: contain;">
                 </div>
-                <h3>'.$row["titleGallery"].'</h3>
+                <h3>' . $row["titleGallery"] . '</h3>
             </a>
 
         </div>';
@@ -92,12 +104,12 @@ $_SESSION['username'] = "Admin";
     if (isset($_SESSION['username'])) {
         echo '<div class="upload">
         <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data">
-            <input type="text" name="filename" placeholder="filename">
+            <input class="form-control" type="text" name="filename" placeholder="File Name" required>
 
-            <input type="text" name="title" placeholder="imgtitle">
+            <input class="form-control" type="text" name="title" placeholder="Title" required>
 
-            <input type="file" name="file">
-            <button type="submit" name="submit">upload</button>
+            <input class="form-control" type="file" name="file" required><br>
+            <button class="btn btn-success" type="submit" name="submit">Upload</button>
 
         </form>
 
@@ -105,6 +117,8 @@ $_SESSION['username'] = "Admin";
     }
 
     ?>
+
+    <!--Footer-->
 
 
     <!--Javacript-->

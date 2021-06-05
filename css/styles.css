@@ -6,6 +6,7 @@
     padding-right:10px;
     padding-left: 10px;
     background-image: url("pexels-scott-webb-593158.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Montserrat";
@@ -31,6 +32,12 @@
     width: 100%;
 }
 
+.upload{
+    padding-top: 50px;
+    margin: auto;
+    width: 20%;
+}
+
 /*Tags*/
 
 body{
@@ -41,3 +48,4 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+
