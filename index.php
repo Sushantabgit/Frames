@@ -10,24 +10,31 @@ $_SESSION['username'] = "Admin";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frames</title>
+
     <!--Bootstrap-Include-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <!--Google-Fonts-->
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <!--Css-->
+
     <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
 
 <body>
+
     <!--NavBar-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,7 +52,7 @@ $_SESSION['username'] = "Admin";
                     <a class="nav-link" href="about.htm">About</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="about.htm">Contact</a>
+                    <a class="nav-link" href="mailto:sushantkumarab@gmail.com">Contact</a>
                 </li>
 
 
@@ -69,6 +76,7 @@ $_SESSION['username'] = "Admin";
     <div id="heading">
         <h1>The best place to show your Photographic skills.</h1>
     </div>
+
     <!--Upload-->
 
     <?php
@@ -89,6 +97,7 @@ $_SESSION['username'] = "Admin";
     }
 
     ?>
+
     <!--content-->
 
     <div class="row preview-sec">
@@ -116,13 +125,6 @@ $_SESSION['username'] = "Admin";
 
         ?>
     </div>
-
-
-    <!--Footer-->
-
-
-    <!--Javacript-->
-    <script src="css/script.js"></script>
 
 </body>
 
