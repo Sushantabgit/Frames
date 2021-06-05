@@ -60,7 +60,7 @@ $_SESSION['username'] = "Admin";
                 if (isset($_SESSION['username'])) {
                     echo '<li class="nav-item">
                 <button class="btn btn-outline-dark">Sign Out</button>
-            </li>';
+                </li>';
                 } else {
                     echo '<li class="nav-item">
                     <button class="btn btn-outline-dark">Login</button>
@@ -113,10 +113,9 @@ $_SESSION['username'] = "Admin";
             $result = mysqli_stmt_get_result($stmt);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="col-lg-3 col-md-6 img-hold">
-            <a href="">
-                <div class="img-thumbnail preview-img" style="background-image: url(images/' . $row["imgFullNameGallery"] . ');  background-repeat: round; background-size: contain;">
-                </div>
-                <h3>' . $row["titleGallery"] . '</h3>
+            <a href= images/' . $row["imgFullNameGallery"] . '>
+                <img class="preview-img" src="images/' . $row["imgFullNameGallery"] . '" alt="">
+                <p>' . $row["titleGallery"] . '</p>
             </a>
 
         </div>';
