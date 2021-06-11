@@ -1,5 +1,5 @@
 <?php
-$_SESSION['username'] = "Admin";
+include_once 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -57,13 +57,13 @@ $_SESSION['username'] = "Admin";
 
 
                 <?php
-                if (isset($_SESSION['username'])) {
+                if (isset($_SESSION["useruid"])) {
                     echo '<li class="nav-item">
-                <button class="btn btn-outline-dark">Sign Out</button>
+                    <a href="includes/logout.inc.php" ><button class="btn btn-outline-dark">Sign Out</button></a>
                 </li>';
                 } else {
                     echo '<li class="nav-item">
-                    <button class="btn btn-outline-dark">Login</button>
+                    <a href="login.php" ><button class="btn btn-outline-dark">Login</button></a>
                 </li>';
                 }
                 ?>
@@ -81,7 +81,7 @@ $_SESSION['username'] = "Admin";
 
     <?php
 
-    if (isset($_SESSION['username'])) {
+    if (isset($_SESSION['useruid'])) {
         echo '<div class="upload">
     <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data">
         <input class="form-control" type="text" name="filename" placeholder="File Name" required>
