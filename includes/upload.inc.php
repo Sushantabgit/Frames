@@ -2,9 +2,9 @@
 
 if (isset($_POST['submit'])) {
 
-    $newfilename = $_POST['filename'];
+    $newfilename = $_POST['uname'];
 
-    if (empty($_POST['filename'])) {
+    if (empty($_POST['uname'])) {
         $newfilename = 'gallery';
     } else {
 
@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
 
 
     $allowed = array("jpg", "jpeg", "png");
+
 
     if (in_array($fileactualext, $allowed)) {
         if ($fileerror === 0) {
@@ -61,19 +62,13 @@ if (isset($_POST['submit'])) {
                         }
                     }
                 }
-            } 
-            else 
-            {
+            } else {
                 echo "File size too big!!";
             }
-        } 
-        else 
-        {
+        } else {
             echo "Error Occured!!";
         }
-    } 
-    else 
-    {
+    } else {
         echo "Only image file types are allowed.";
         exit();
     }

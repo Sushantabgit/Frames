@@ -69,9 +69,9 @@ include_once 'header.php';
     if (isset($_SESSION['useruid'])) {
         echo '<div class="upload">
     <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data">
-        <input class="form-control" type="text" name="filename" placeholder="File Name" required>
+        <input class="form-control" type="text" name="uname" placeholder="User Name" required>
 
-        <input class="form-control" type="text" name="title" placeholder="Title" required>
+        <input class="form-control" type="text" name="title" placeholder="Title of Image" required>
 
         <input class="form-control" type="file" name="file" required><br>
         <button class="btn btn-success" type="submit" name="submit">Upload</button>
