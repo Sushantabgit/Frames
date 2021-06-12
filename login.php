@@ -2,28 +2,35 @@
 include_once 'header.php';
 ?>
 
-<section class="signup-form">
-<h2>log In</h2>
-<div class="signup-form-form">
-<form action="includes/login.inc.php" method="post">
-<input type="text" name="uid" placeholder="Username">
-<input type="password" name="pwd" placeholder="Password">
-<button type="submit" name="submit">Log In</button>
-</form>
-</div>
-<?php
+<link rel="stylesheet" href="css/login.css">
 
-echo '<a href="signup.php">Sign Up</a>';
-if (isset($_GET["error"])) {
-    if ($_GET["error"] == "emptyinput") {
-        echo "<p>Fill is all fields</p>";
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="font-family: Montserrat;" href="index.php">Home</a>
+</nav>
+
+<div class="signup-form">
+
+    <div class="signup-form-form">
+        <form class="form form-control" action="includes/login.inc.php" method="post">
+        <h2>Log In</h2>
+            <input class="form-control" type="text" name="uid" placeholder="UserName"><br>
+            <input class="form-control" type="password" name="pwd" placeholder="Password"><br>
+            <button class="btn btn-success " type="submit" name="submit">Log In</button><br>
+            <h3>or</h3>
+            <a class="btn btn-dark" href="signup.php">Sign Up</a>
+        </form>
+    </div>
+    <?php
+
+    if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+            echo "<p>Fill is all fields</p>";
+        } else if ($_GET["error"] == "wronglogin") {
+            echo '<p>Incorrect login info!</p>';
+        }
     }
-else if ($_GET["error"] == "wronglogin") {
-    echo "<p>Incorrect login info!</p>";
-}
-
-}
-?>
-</section>
+    ?>
+</div>
 </body>
+
 </html>

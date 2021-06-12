@@ -42,7 +42,6 @@ else if ($_GET["error"] == "none") {
 ?>
 </section>
 
-<?php
-include_once 'footer.php';
-
-?>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    margin: auto;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+.navbar-brand{
+    font-size: max(1vw,3vh);
+}
+
+h2{
+    padding:4vh;
+    font-size: max(1vw,4vh);
+}
+
+h3{
+    padding:2vh;
+    font-size: max(1vw,2vh);
+}
+.form{
+    background-color: #E6E6E6;
+    border: 0;
+}
+.signup-form{
+    font-size: max(1vw,2vh);
+    width: max(50vw,30vh);
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+.form-control{
+    font-size: max(1vw,3vh);
+}
+
+.btn{
+    font-size: max(1vw,3vh);
+}
+
+
+
+p{
+    color: red;
+}
