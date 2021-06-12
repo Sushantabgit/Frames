@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 
     if (in_array($fileactualext, $allowed)) {
         if ($fileerror === 0) {
-            if ($filesize < 2000000) {
+            if ($filesize < 20000000) {
                 $imgfullname = $newfilename . "." . uniqid("", true) . "." . $fileactualext;
                 $filedestination = "../images/" . $imgfullname;
 
