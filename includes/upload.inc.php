@@ -4,13 +4,7 @@ if (isset($_POST['submit'])) {
 
     $newfilename = $_POST['uname'];
 
-    if (empty($_POST['uname'])) {
-        $newfilename = 'gallery';
-    } else {
-
-        $newfilename = strtolower(str_replace(" ", "-", $newfilename));
-    }
-
+    $newfilename = strtolower(str_replace(" ", "-", $newfilename));
     $imgtitle = $_POST['title'];
     $file = $_FILES['file'];
 
