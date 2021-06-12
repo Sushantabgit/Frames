@@ -1,13 +1,12 @@
 /*Ids*/
 #heading{
     color: white;
-    padding-top:100px;
-    padding-bottom: 100px ;
-    padding-right:10px;
-    padding-left: 10px;
-    background-image: url("pexels-scott-webb-593158.jpg");
+    padding-top:150px;
+    padding-bottom: 150px ;
+    background-image: url("team-cover.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
     font-family: "Montserrat";
 }
 /*classe*/
@@ -21,9 +20,10 @@
     width: 100%;
 }
 .pic{
+    border: 5px solid white ;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
 }
 .title{
     padding: auto;
@@ -38,6 +38,7 @@
 /*tags*/
 body{
     text-align: center;
+    background-color: #E6E6E6;
 }
 
 body::-webkit-scrollbar{
@@ -49,6 +50,5 @@ h1{
 }
 
 ul{
-
     list-style: none;
 }
