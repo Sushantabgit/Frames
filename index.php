@@ -97,7 +97,7 @@ include_once 'header.php';
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
             while ($row = mysqli_fetch_assoc($result)) {
-                echo '<div class="col-lg-3 col-md-6 img-hold">
+                echo '<div class="col-lg-4 col-md-6 img-hold">
             <a href= images/' . $row["imgFullNameGallery"] . '>
                 <img class="preview-img" src="images/' . $row["imgFullNameGallery"] . '" alt="' . $row["titleGallery"] . '">
                 <p>' . $row["titleGallery"] . '</p>
