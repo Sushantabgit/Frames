@@ -23,7 +23,7 @@ include_once 'header.php';
     <?php
     if (isset($_GET["error"])) {
         if ($_GET["error"] == "emptyinput") {
-            echo "<p>Fill is all fields</p>";
+            echo "<p>Fill all fields</p>";
         } else if ($_GET["error"] == "invaliduid") {
             echo "<p>Choose a proper username!</p>";
         } else if ($_GET["error"] == "invalidemail") {
@@ -34,8 +34,7 @@ include_once 'header.php';
             echo "<p>Something went wrong, try again!</p>";
         } else if ($_GET["error"] == "usernametaken") {
             echo "<p>Username already taken!</p>";
-        } else if ($_GET["error"] == "none") {
-            echo "<p>You have signed up!</p>";
+        } else {
             header("location: login.php");
         }
     }
