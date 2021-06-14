@@ -89,7 +89,7 @@ include_once 'header.php';
         <?php
         include_once 'includes/dbh.php';
 
-        $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC";
+        $sql = "SELECT * FROM gallery ORDER BY idGallery DESC";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
             echo 'SQL STATEMENT FAILED!';
