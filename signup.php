@@ -35,9 +35,10 @@ include_once 'header.php';
         } else if ($_GET["error"] == "usernametaken") {
             echo "<p>Username already taken!</p>";
         } else {
-            header("location: login.php");
+            echo '<p style="color:green;">Successfully Signed Up!</p>';
+            echo '<a href="login.php">Go Back</a>';
+            
         }
-    }
     ?>
 </section>
 
