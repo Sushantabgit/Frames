@@ -39,10 +39,10 @@ include_once 'header.php';
             echo '<a href="login.php">Go Back</a>';
             
         }
+    }
     ?>
 </section>
 
 </div>
 </body>
-
 </html>
