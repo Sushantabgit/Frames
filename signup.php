@@ -33,7 +33,7 @@ include_once 'header.php';
         } else if ($_GET["error"] == "stmtfailed") {
             echo "<p>Something went wrong, try again!</p>";
         } else if ($_GET["error"] == "usernametaken") {
-            echo "<p>Username already taken!</p>";
+            echo "<p>Username or Email already taken!</p>";
         } else {
             echo '<p style="color:green;">Successfully Signed Up!</p>';
             echo '<a href="login.php">Go Back</a>';
