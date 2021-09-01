@@ -54,7 +54,7 @@
             <img style="border-radius: 25px ;" class="preview-img" src="images/' . $vname . '">
         </div>
         <div class="d-grid gap-2" style = "padding-left: 10%; padding-right:10%; padding-bottom: 5%;">
-            <a class = "d-grid gap-2" href = "includes/download.php?file='.$vname.'" download><button class="btn btn-success" type="button">Download</button></a>
+            <a class = "d-grid gap-2" href = "download.php?file='.$vname.'" download><button class="btn btn-success" type="button">Download</button></a>
             <a class = "d-grid gap-2" href =" index.php"><button class="btn btn-dark" type="button">Back</button></a>
         </div>';
 ?>

@@ -1,10 +1,12 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "frames";
+$serverName = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "frames";
 
+$conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 
-$password = "";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+if(!$conn) {
+    die("Connection Failed: " . mysqli_connect_error());
+}
